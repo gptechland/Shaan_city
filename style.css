@@ -1,0 +1,62 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background: #004aad;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: url('assets/images/hero-banner.jpg') center/cover no-repeat;
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
+section {
+  padding: 40px;
+  text-align: center;
+}
+.service-card {
+  background: #f5f5f5;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+}
