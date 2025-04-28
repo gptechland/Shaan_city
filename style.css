@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset and basics */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: #004aad;
+  background-color: #004aad;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -21,9 +21,9 @@ header {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
   color: white;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -32,18 +32,18 @@ header {
 }
 
 .nav-links li {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #ffcc00; /* nice highlight on hover */
+  color: #ffcc00;
 }
 
 /* Hero Section */
@@ -71,10 +71,10 @@ header {
   display: inline-block;
   background: white;
   color: #004aad;
-  padding: 12px 25px;
+  padding: 12px 30px;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -83,119 +83,105 @@ header {
   color: white;
 }
 
-/* About Section */
-.about {
-  padding: 60px 20px;
+/* About Preview */
+.about-preview {
   background: #f9f9f9;
+  padding: 80px 20px;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.about-preview-container {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.about-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-}
-
-.about-text {
+.about-preview-text {
   flex: 1;
   padding: 20px;
 }
 
-.about-text h1 {
-  margin-bottom: 20px;
+.about-preview-text h2 {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 
-/* Services Section */
-.services {
-  padding: 60px 20px;
+.about-preview-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  background: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background: #003080;
+}
+
+.about-preview-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-preview-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Services Preview */
+.services-preview {
   background: #ffffff;
+  padding: 80px 20px;
   text-align: center;
 }
 
-.services h1 {
-  margin-bottom: 40px;
+.services-preview h2 {
   font-size: 36px;
+  margin-bottom: 40px;
 }
 
-.services-container {
+.services-preview-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.service-card {
+.service-preview-card {
   background: #f5f5f5;
-  border-radius: 10px;
   padding: 30px 20px;
-  width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.service-card p {
-  font-size: 16px;
-}
-
-/* Contact Section */
-.contact {
-  padding: 60px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.contact h1 {
-  margin-bottom: 40px;
-  font-size: 36px;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.contact-info {
-  background: #fff;
-  padding: 20px;
   border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
 }
 
-.contact-info h3 {
+.service-preview-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-preview-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-preview-card h3 {
+  font-size: 22px;
   margin-bottom: 10px;
-  color: #004aad;
 }
 
-.contact-info p a {
-  text-decoration: none;
-  color: #333;
+.service-preview-card p {
+  font-size: 16px;
 }
 
 /* Footer */
@@ -207,19 +193,14 @@ footer {
   color: #555;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-  .about-container {
+  .about-preview-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-container {
+  .services-preview-container {
     flex-direction: column;
     align-items: center;
   }
